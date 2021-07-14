@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maths Quiz</title>
+	<link rel="stylesheet" type="text/css" href="mqstyle.css">
+</head>
+<body>
+	<h1>Maths Quiz Game</h1>
+	<h2>Every correct answer has a score of 10 and the game restarts from 0 at every wrong answer.</h2>
+<section>
+	<h3>SOLVE</h3>
+	<div class="centerdiv">
+		<div class="insertBox">
+			<div class="box1">
+				<input type="text" id="v1">
+			</div>
+			<div class="box1">
+				<input type="text" id="op">
+			</div>
+			<div class="box1">
+				<input type="text" id="v2">
+			</div>
+		</div>
+		<div class="middleBox">
+				<input type="text" id="answ">
+		</div>
+		<div class="sentBox">
+			<button onclick="jsGame()">Submit Answer</button>
+		</div>
+		<h4>Score</h4>
+		<div class="box1">
+			<input type="text" id="pi">
+		</div>
+		<div class="sentBox2">
+			<button onclick="jsre()">Restart</button>
+		</div>
+	</div>
+</section>
+<script>
+	let n1= Math.floor(Math.random()*10+1);
+	let n2= Math.floor(Math.random()*10+1);
+	let n3= Math.floor(Math.random()*10+1);
+	n3%=3;
+	document.getElementById('v1').value=n1;
+	document.getElementById('v2').value=n2;
+	let ans=0;
+	if(n3==0)
+	{
+		document.getElementById('op').value="+";
+		ans+=n1+n2;
+	}
+	else if(n3==1)
+	{
+		document.getElementById('op').value="-";
+		ans+=n1-n2;
+	}
+	else if(n3==2)
+	{
+		document.getElementById('op').value="*";
+		ans+=n1*n2;
+	}
+	let score=0;
+	const jsre=()=>{
+		score=0;
+		alert("Game Restarted");
+		document.getElementById('pi').value=score;
+	}
+	const jsGame=()=>{
+		var u=document.getElementById('answ').value;
+		if(u==ans)
+			score+=10;
+		else
+		{
+			alert("Oops! Correct Answer is "+ans+"! Final Score is: "+score+" Game Restarted! ");
+			score=0;
+		}
+	document.getElementById('pi').value=score;
+	document.getElementById('answ').value="";
+	n1= Math.floor(Math.random()*10+1);
+	n2= Math.floor(Math.random()*10+1);
+	n3= Math.floor(Math.random()*10+1);
+	n3%=3;
+	document.getElementById('v1').value=n1;
+	document.getElementById('v2').value=n2;
+	ans=0;
+	if(n3==0)
+	{
+		document.getElementById('op').value="+";
+		ans+=n1+n2;
+	}
+	else if(n3==1)
+	{
+		document.getElementById('op').value="-";
+		ans+=n1-n2;
+	}
+	else if(n3==2)
+	{
+		document.getElementById('op').value="*";
+		ans+=n1*n2;
+	}
+}
+</script>
+</body>
+</html>

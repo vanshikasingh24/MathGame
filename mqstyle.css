@@ -1,0 +1,113 @@
+*{
+	margin:  0;
+	padding: 0;;
+}
+h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: magenta;
+	color: darkcyan;
+}
+h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightgreen;
+	color: orangered;
+}
+section{
+	height:90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:  center;
+	background-image: url('mathq.png');
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+section h3{
+	background-color: brown;
+	color: floralwhite;
+	margin-bottom: 5px;
+	padding-bottom: 8px;
+}
+section h4{
+	padding-bottom: 5px;
+	color: lightcyan;
+}
+.centerdiv{
+	width: 500px;
+	height: 420px;
+	background-color: purple;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.insertBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+#v1, #v2, #op
+{
+	text-align: center;
+	background-color: yellowgreen;
+	color: darkblue;
+	padding: 20px 30px;
+	width: 35px;
+	font-size: 30px;
+	box-shadow: 1px 1px 0px #999,
+				2px 2px 0px #999,
+				3px 3px 0px #999,
+				4px 4px 0px #999,
+				5px 5px 0px #999,
+				6px 6px 0px #999;
+}
+#pi{
+	text-align: center;
+	background-color: lightpink;
+	padding: 20px 30px;
+	width: 100px;
+	font-size: 30px;
+}
+
+.middleBox #answ{
+	margin: 15px 0;
+	padding: 5px 0;
+	font-size: 30px;
+	text-align: center;
+	width: 280px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+.sentBox button{
+	margin: 20px 0;
+	padding: 10px 20px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	color: brown;
+	border: none;
+	background-color: skyblue;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+.sentBox2 button{
+	margin: 20px 0;
+	padding: 10px 20px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	color: yellow;
+	border: none;
+	background-color: lightcoral;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
